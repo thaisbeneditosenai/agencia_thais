@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(108, 255, 206);
+    color: rgb(235, 245, 241);
+    line-height: 1.6; /*espaço entre as linhas*/
+}
+
+.cabecalho{
+    background-color: rgb(55, 146, 116);
+    color: aliceblue;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.navegacao{
+    display: flex;
+    gap: 35px;
+}
+
+.menu_links a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.menu_links a:hover{
+    color: aqua;
+}
+
+
+.redessociais{
+    gap: 15px;
+    display: flex;
+    border-left: 2px solid #d1e3dd;
+    padding-left: 20px;
+}
+
+.redessociais a{
+    color: rgb(162, 219, 200);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.redessociais a.whatsapp :hover{color: rgb(76, 255, 63);}
+.redessociais a.face :hover{color: blue;}
+.redessociais a.insta :hover{color: rgb(255, 51, 153);}
+.redessociais a.twtter :hover{color: black;}
+
+.redessociais a:hover{
+    transform: scale(1.5);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.75);
+}
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texto h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px  #c6e9eda8;
+}
+
+.texto p{
+    font-size: 16px;
+    text-shadow:0 2px 8px #d1e3dd;
+}
+
+.container{
+    max-width: 900px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.titulo{
+    font-size: 26px;
+    color: rgb(1, 81, 79);
+    margin-bottom: 10px;
+    width: bold;
+}
+
+.subtitulo{
+    font-size: 14px;
+    color: rgb(1, 81, 79);
+    margin-bottom: 20px;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.familia{
+    max-width: 420px;
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.legenda{
+    font-size: 14px;
+    color: rgb(1, 81, 79);
+    margin-bottom: 20px;
+}
+
+
+.copirayt{
+    text-align: center;
+    color: rgb(1, 81, 79);
+    text-decoration: double;
+    font-size: 12px;
+}
+
+.fotodestino{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.textodestinos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texto h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px  #c6e9eda8;
+}
+
+.texto p{
+    font-size: 16px;
+    text-shadow:0 2px 8px #d1e3dd;
+}
+
+.container2{
+    max-width: 500px;
+    text-align: justify;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.fotodesti{
+    background-color: rgba(60, 128, 105, 0.384);
+    color: #f0f1f4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.titulodestino{
+    font-size: 26px;
+    color: rgb(2, 82, 63);
+    margin-bottom: 10px;
+    width: bold;
+    background-color: rgba(60, 128, 105, 0.384);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.descricao-destino{
+    font-size: 15px;
+    color: beige;
+    background-color: rgba(60, 128, 105, 0.384);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.preco{
+    background-color: rgb(60, 128, 105);
+    color: #fffffe;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.btn-comprar{
+    background-color: rgb(224, 234, 231);
+    color: rgb(10, 118, 3);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.btn-comprar:hover{
+    background-color: #e5ef64;
+    color: #0d0d0d;
+}
+
+.container3{
+    max-width: 900px;
+    text-align: justify;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.titulo-cadastro{
+    font-size: 26px;
+    color: rgb(2, 82, 63);
+    margin-bottom: 10px;
+    width: bold;
+    background-color: rgba(60, 128, 105, 0.384);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.subtitulocadastro{
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+    background-color: rgba(60, 128, 105, 0.384);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.area-inscricao{
+    display: relative;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.coluna-form{
+    flex: 1;
+    min-width: 320px;
+    background-color: #6ddeaf;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #f7f7f8;
+}
+
+
+.coluna-form input[type= "text"],
+.coluna-form input[type= "email"],
+.coluna-form input[type= "date"],
+.coluna-form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #96d6c7;
+    font-size: 14px;
+    color: rgb(1, 45, 27);
+}
+
+.fotospraias{
+    max-width: 420px;
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.paragrafo1{
+    color: #dfebeb;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: #3db7a3c4;
+    margin-top: 10px;
+    width: 1000px;
+    display: flex;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px;
+}
+
+.paragrafo2{
+    color: #dfebeb;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: #0e947ec4;
+    margin-top: 10px;
+    width: 1000px;
+    display: flex;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px;
+}
+
+.paragrafo3{
+    color: #dfebeb;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: #02483dc4;
+    margin-top: 10px;
+    width: 1000px;
+    display: flex;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 5px;
+}
+
+
+
+.frase{
+    font-size: 20px;
+    background-color: #41ceb2a5;
+    border: 40px;
+    border-radius: 6px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: #fcfcfc;
+    margin-bottom: 25px;
+}
+
+
+
+.rodape{
+    width: 100%;
+    background-color: rgb(55, 146, 116);
+}
